@@ -3,7 +3,7 @@ package minicache
 import (
 	"sync"
 
-	"minicache/lru"
+	"minicache/minicache/lru"
 )
 
 type cache struct {
@@ -33,5 +33,5 @@ func (c *cache) get(key string) (value ByteView, ok bool) {
 		return v.(ByteView), ok
 	}
 
-	return 
+	return
 }
